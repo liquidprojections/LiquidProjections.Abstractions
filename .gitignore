@@ -5,14 +5,25 @@
 *.suo
 *.user
 *.sln.docstates
+*.sln.ide
+.vs/
+.vscode/
+
+project.lock.json
+*.nuget.props
+*.nuget.targets
 
 # Build results
-
+Artifacts/
 [Dd]ebug/
 [Rr]elease/
 x64/
-[Oo]bj/
 [Bb]in/
+[Oo]bj/
+
+# Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for MSBuild targets
+!packages/*/build/
+packages/**
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
@@ -69,8 +80,8 @@ _TeamCity*
 *.dotCover
 
 # NCrunch
-
 .*crunch*.local.xml
+_NCrunch_FluentAssertions/*
 
 # Installshield output folder
 [Ee]xpress/
@@ -92,7 +103,6 @@ publish/
 *.Publish.xml
 
 # NuGet Packages Directory
-## TODO: If you have NuGet Package Restore enabled, uncomment the next line
 packages/
 
 # Windows Azure Build Output
@@ -138,9 +148,6 @@ ModelManifest.xml
 # Windows detritus
 # =========================
 
-# Some stackdump file that sometimes appears
-us.stackdump
-
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -155,31 +162,32 @@ $RECYCLE.BIN/
 .DS_Store
 Package/Lib
 *.nupkg
+*.zip
 
-# Temporary files created when merging
-*.orig
-*.LOCAL.*.xml
-*.REMOTE.*.xml
-*.BASE.*.xml
-*.BACKUP.*.xml
+.idea*
 
-# Symbolic links and other files created by ConfigureSolutions
-Output/*
-**/*/Raven/CompiledIndexCache/
+# Jekyll
+*.gem
+*.sublime-project
+*.sublime-workspace
+docs/.bundle
+docs/.DS_Store
+docs/.jekyll-metadata
+docs/.sass-cache
+docs/_asset_bundler_cache
+docs/_site
+docs/codekit-config.json
+docs/Gemfile.lock
+docs/node_modules
 
-#Visual Studio 2015 files
-**/*.sln.ide/**
-_NCrunch_LiquidProjections/
-Artifacts/**
+# Approval Tests
+*.received.txt
 
-# User-specific stuff:
-.idea
+# Documentation file needed for StyleCop.Analyzers
+Tests/FluentAssertions.Specs/FluentAssertions.Specs.xml
 
-# Cake related
-Build/**
-!Build/packages.config
-Tools/**
+# BenchmarkDotNet
+Tests/Benchmarks/BenchmarkDotNet.Artifacts/
 
-# Visual Studio
-**/.vs/**
-.vs/**
+# Documentation spell check
+node_modules/

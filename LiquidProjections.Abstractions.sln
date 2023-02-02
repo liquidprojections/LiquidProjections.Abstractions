@@ -5,12 +5,14 @@ VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{27C8B175-6555-4591-87B1-177A2874FEA9}"
 	ProjectSection(SolutionItems) = preProject
-		NuGet.Config = NuGet.Config
+		.github\workflows\build.yml = .github\workflows\build.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{AE89AB5E-BC68-4AA3-9183-A222AC81691C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiquidProjections.Abstractions", "Src\LiquidProjections.Abstractions\LiquidProjections.Abstractions.csproj", "{8E38C862-7DC9-4A7E-A2EE-921FFBC7EE2D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{4E048586-3BB6-4093-8570-BA293212B27A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +20,8 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E048586-3BB6-4093-8570-BA293212B27A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E048586-3BB6-4093-8570-BA293212B27A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E38C862-7DC9-4A7E-A2EE-921FFBC7EE2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8E38C862-7DC9-4A7E-A2EE-921FFBC7EE2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E38C862-7DC9-4A7E-A2EE-921FFBC7EE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU

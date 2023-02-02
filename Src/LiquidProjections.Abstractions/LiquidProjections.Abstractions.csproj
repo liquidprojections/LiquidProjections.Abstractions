@@ -1,18 +1,33 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.1</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <TargetFrameworks>netstandard1.1;netstandard2.0</TargetFrameworks>
+    <LangVersion>default</LangVersion>
+    <Authors>Dennis Doomen</Authors>
+    <PackageDescription>
+      Defines an abstraction for an event store that supports a transactionally consist group of events.
+    </PackageDescription>
+    <PackageProjectUrl>https://www.liquidprojections.net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/liquidprojections/LiquidProjections</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>event-sourcing; projections; ddd</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>Icon.png</PackageIcon>
+    <Copyright>Copyright Dennis Doomen 2010-2023</Copyright>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netstandard1.1\LiquidProjections.Abstractions.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\LiquidProjections.Abstractions.xml</DocumentationFile>
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
     <TreatSpecificWarningsAsErrors />
     <NoWarn>1701;1702;1705;1591</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard1.1\LiquidProjections.Abstractions.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\LiquidProjections.Abstractions.xml</DocumentationFile>
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
     <TreatSpecificWarningsAsErrors />
     <NoWarn>1701;1702;1705;1591</NoWarn>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="Icon.png" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
 </Project>
