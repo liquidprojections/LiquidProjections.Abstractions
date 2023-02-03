@@ -5,3 +5,5 @@
 #VisionSuite
 
 *.sln -text merge=union
+
+*.sh text eol=lf

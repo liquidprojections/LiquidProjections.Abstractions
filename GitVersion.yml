@@ -1,6 +1,0 @@
-branches: 
-  (pull|pull\-requests|pr)[/-]:
-    mode: ContinuousDeployment
-    tag: pr
-ignore:
-  sha: []
